@@ -1,0 +1,75 @@
+<div class="flex flex-col gap-2 bg-white/50 backdrop-blur-md rounded-md border border-gray-50 p-3 hover:border-amber-300 cursor-pointer">
+
+    <button (click)="switchLayer('default')" class="flex flex-col items-center justify-center cursor-pointer"
+        title="Default View">
+        <span
+            class="bg-white rounded-full size-10 flex items-center justify-center border border-gray-300 text-xs text-gray-700">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" class="text-gray-500">
+                <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21" />
+                <line x1="9" x2="9" y1="3" y2="18" />
+                <line x1="15" x2="15" y1="6" y2="21" />
+            </svg>
+        </span>
+        <span class="text-xs text-gray-700">Default</span>
+    </button>
+
+
+    <button (click)="switchLayer('street')" class="flex flex-col items-center justify-center cursor-pointer"
+        title="Street View">
+        <span
+            class="bg-white rounded-full size-10 flex items-center justify-center border border-gray-300 text-xs text-gray-700">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" class="text-gray-500">
+                <rect width="16" height="20" x="4" y="2" rx="2" />
+                <path d="M9 22v-4h6v4" />
+                <path d="M8 6h.01" />
+                <path d="M16 6h.01" />
+                <path d="M12 6h.01" />
+                <path d="M12 10h.01" />
+                <path d="M12 14h.01" />
+                <path d="M16 10h.01" />
+                <path d="M16 14h.01" />
+                <path d="M8 10h.01" />
+                <path d="M8 14h.01" />
+            </svg>
+        </span>
+        <span class="text-xs text-gray-700">Street</span>
+    </button>
+
+
+    <button (click)="switchLayer('satellite')" class="flex flex-col items-center justify-center cursor-pointer"
+        title="Satellite View">
+        <span
+            class="bg-white rounded-full size-10 flex items-center justify-center border border-gray-300 text-xs text-gray-700">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" class="text-gray-500">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                <path d="M2 12h20" />
+            </svg>
+        </span>
+        <span class="text-xs text-gray-700">Satellite</span>
+    </button>
+
+
+    <button (click)="switchLayer('outdoors')" class="flex flex-col items-center justify-center cursor-pointer"
+        title="Outdoors View">
+        <span
+            class="bg-white rounded-full size-10 flex items-center justify-center border border-gray-300 text-xs text-gray-700">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" class="text-gray-500">
+                <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
+            </svg>
+        </span>
+        <span class="text-xs text-gray-700">Outdoors</span>
+    </button>
+
+
+    <button (click)="switchLayer('dark')" class="flex flex-col items-center justify-center cursor-pointer"
+        title="Dark View">
+        <span
+            class="bg-white rounded-full size-10 flex items-center justify-center border border-gray-300 text-xs text-gray-700">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" class="text-gray-500">
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+            </svg>
+        </span>
+        <span class="text-xs text-gray-700">Dark</span>
+    </button>
+</div>

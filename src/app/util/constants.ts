@@ -1,0 +1,1 @@
+export const DEFAULT_MAP_COORDINATES = [6.5244, 3.3792]

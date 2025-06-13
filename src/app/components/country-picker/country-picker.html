@@ -1,0 +1,17 @@
+@if(countries()) {
+    <div cdkDrag class="bg-white/50 backdrop-blur-md rounded-2xl p-3 flex items-center justify-center gap-2 border border-gray-50 hover:border-amber-300 cursor-pointer">
+        @if(!isLoading()){
+            <span [style.backgroundImage]='`url(${ selectedCountry()?.flags?.png })`' class="rounded-full size-8 bg-contain bg-no-repeat bg-center bg-white"></span>
+        } @else {
+            <span class="rounded-full overflow-hidden size-8">
+                <img class="loader object-cover"src="loader.gif" alt="Walking loader">
+            </span>
+        }
+
+        <select [value]="selectedCountry()?.name.common" (change)="onCountryChange()" #country class="!outline-none w-fit appearance-none text-center font-semibold" [attr.flag]="">
+            @for(item of countries(); track item) {
+                <option [value]="item.name.common">{{item.name.common}}</option>
+            }
+        </select> 
+    </div>
+}
