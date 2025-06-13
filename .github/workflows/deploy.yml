@@ -42,7 +42,7 @@ jobs:
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist/gazetteer' # IMPORTANT: Update this path if your project name in angular.json is different
+          path: './dist/gazetteer/browser' # IMPORTANT: Update this path if your project name in angular.json is different
 
   deploy:
     name: Deploy to Pages
